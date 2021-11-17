@@ -1,6 +1,5 @@
 import './App.css';
 
-const fs = require('browserify-fs');
 // const path = require('path');
 
 function App() {
@@ -78,14 +77,14 @@ function logKeyDown(e) {
   //   seconds: actualTime.getSeconds(),
   //   milliseconds: actualTime.getUTCMilliseconds()
   // }
-  let time = `true,${e.code},${actualTime.getUTCHours()},${actualTime.getMinutes()},${actualTime.getSeconds()},${actualTime.getUTCMilliseconds()}`
+  let time = `true,${e.key},${actualTime.getUTCHours()},${actualTime.getMinutes()},${actualTime.getSeconds()},${actualTime.getUTCMilliseconds()}`
 
   keyStrokes.push(time)
 }
 
 function logKeyUp(e) {
   let actualTime = new Date();
-  let time = `false,${e.code},${actualTime.getUTCHours()},${actualTime.getMinutes()},${actualTime.getSeconds()},${actualTime.getUTCMilliseconds()}`
+  let time = `false,${e.key},${actualTime.getUTCHours()},${actualTime.getMinutes()},${actualTime.getSeconds()},${actualTime.getUTCMilliseconds()}`
 
   keyStrokes.push(time)
 }
