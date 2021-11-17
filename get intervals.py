@@ -5,8 +5,6 @@ Machine Learning Project
 from tkinter.filedialog import askopenfilename, askdirectory 
 import glob
 import os.path
-from datetime import datetime
-import pandas as pd
 
 #FAzer o try to open except aqui
 def choose_path():
@@ -80,7 +78,6 @@ def processing_the_data(path_to_files):
         
                 #Add an item to the profile list
                 aux_profile.append(interval)
-                print(interval)
             else:
                 continue
         
@@ -99,7 +96,36 @@ def processing_the_data(path_to_files):
     
     return profile
 
-
+def save_parameters(user_data,name):
+    
+    folder_name = './biometrics/'
+    
+    if not(os.path.exists(folder_name)):
+        os.makedirs(folder_name)
+        
+    
+    #Creates the output file
+    output = open(folder_name + name + '_data.csv',"a")
+    
+    num_of_writtings = len(user_data)
+    num_of_pairs = len(user_data[0])
+    
+    #Orders the file where each line are all the values associated to a delay in inseting a pair of letters
+    for i in range(num_of_pairs):
+        
+        for j in range(num_of_writtings):
+            output.write(str(user_data[j][i]))
+            
+            #Write the correct separator
+            if j == num_of_writtings - 1:
+                output.write('\n')
+            else:
+                output.write(',')
+    
+    
+    
+    output.close()
+    return
 
 if __name__ == '__main__':
     name = input('Who is this data from?\n')
@@ -109,6 +135,9 @@ if __name__ == '__main__':
     path = 'C:/Users/Utilizador/Desktop/Insa Lyon Semestre/Machine Learning/2º Projeto/smaller_sentence'
     print(path)
     user_data = processing_the_data(path)
+    
+    #Saves the values in a csv filea
+    save_parameters(user_data, name)
     
     
 
