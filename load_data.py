@@ -28,7 +28,7 @@ def load_data(name):
         line = line.split('\n')[0]
         line = line.split(',')
         
-        #foe each value
+        #for each value
         for i in range(len(line)):
             line_saver.append(line[i])
             
