@@ -1,13 +1,5 @@
 down,keyCode,hours,minutes,seconds,milliseconds
 true,ShiftRight,0,28,52,137
-true,ShiftRight,0,28,52,643
-true,ShiftRight,0,28,52,673
-true,ShiftRight,0,28,52,705
-true,ShiftRight,0,28,52,736
-true,ShiftRight,0,28,52,767
-true,ShiftRight,0,28,52,798
-true,ShiftRight,0,28,52,830
-true,ShiftRight,0,28,52,880
 true,Digit8,0,28,52,898
 false,Digit8,0,28,52,994
 false,ShiftRight,0,28,53,173

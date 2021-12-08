@@ -30,13 +30,6 @@ false,KeyR,16,32,17,675
 true,KeyK,16,32,17,859
 false,KeyK,16,32,17,967
 true,ShiftLeft,16,32,18,111
-true,ShiftLeft,16,32,18,601
-true,ShiftLeft,16,32,18,634
-true,ShiftLeft,16,32,18,663
-true,ShiftLeft,16,32,18,694
-true,ShiftLeft,16,32,18,742
-true,ShiftLeft,16,32,18,775
-true,ShiftLeft,16,32,18,797
 true,Digit9,16,32,18,814
 false,Digit9,16,32,18,938
 false,ShiftLeft,16,32,19,176
