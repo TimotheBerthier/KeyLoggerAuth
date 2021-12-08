@@ -1,6 +1,5 @@
 down,keyCode,hours,minutes,seconds,milliseconds
 true,ShiftLeft,16,31,42,358
-true,ShiftLeft,16,31,42,868
 true,Digit8,16,31,42,900
 false,Digit8,16,31,43,7
 false,ShiftLeft,16,31,43,149
